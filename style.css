@@ -1,0 +1,78 @@
+body {
+  display: grid;
+  grid-template-columns: 15rem auto 15rem;
+  grid-template-rows: 8rem auto;
+  margin: 0;
+  padding: 0;
+}
+
+aside {
+  background: #aaa;
+  height: 100vh;
+}
+#left-aside {
+  grid-column: 1 / 2;
+}
+#right-aside {
+  grid-column: 3 / 4;
+}
+/* Hide asides when on phone */
+@media and (min-width: 100px) {
+  aside {
+    display: none;
+  }
+}
+
+header {
+  background: #444;
+  position: relative;
+}
+
+#home {
+  font-size: x-large;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#sandbox {
+  font-size: x-large;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#rentATool {
+  font-size: xxx-large;
+  padding: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#login {
+  font-size: x-large;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+}
+#signUp {
+  font-size: x-large;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#mainSignUp {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+#mainSignUp > h1 {
+  text-align: center;
+}
+
+#signUpForm > input,
+#signUpForm > button {
+  font-size: x-large;
+  display: block;
+  margin: 0 auto;
+}

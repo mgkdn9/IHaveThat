@@ -1,0 +1,15 @@
+CREATE TABLE users (
+	  idUsers int(11) AUTO_INCREMENT PRIMARY KEY NOT null,
+    uidUsers TINYTEXT NOT null,
+    emailUsers TINYTEXT NOT null,
+    pwdUsers LONGTEXT NOT null
+);
+
+ALTER TABLE users
+ADD latitude DECIMAL(10,7),
+ADD longitude DECIMAL(10,7)
+
+INSERT INTO `users`(`idUsers`, `uidUsers`, `emailUsers`, `addressUsers`, `pwdUsers`, `latitude`, `longitude`) VALUES (1,'mgkdn9','mgkdn9@gmail.com','8601 Old 63 Rd Apt 1','$2y$10$k68Z0AXghsQqVn2hu7WZNev.jTZv3No16yhmyEQdgfE86AQye7mPO
+',38.964081,-94.719017)
+
+INSERT INTO `users`(`uidUsers`, `emailUsers`, `addressUsers`, `pwdUsers`, `latitude`, `longitude`) VALUES ('mkohlberg95','mkohlberg95@gmail.com','8601 Bell St.','$2y$10$ejo3DfnFSU7FuMrRPCzV4ej1R0F5jDq98zTnAZMloAFat0Ls2t3fC',39.131360,-93.214720)
